@@ -6,16 +6,19 @@
 		<script src="lib/GLObjectModel.js"></script>
     <script src="lib/quaternion.min.js"></script>
 		<script src="lib/utils.js"></script>
+		<script src="lib/tutUtil.js"></script>
 		<script src="lib/three.min.js"></script>
+		<script src="lib/gl-matrix.js"></script>
 		<script src="lib/app.js"></script>
 
 	</head>
 
-	<body style="background-color: grey;" onLoad="main();">
+	<body style="background-color: grey;" onLoad="InitDemo();">
 		<canvas id="my-canvas" width='800' height='600' style="background-color: white;">
 			Your browser doesn't support the Canvas Element!
 		</canvas>
 		<center>
+			<img id="crate" src="Assets/crate-front.png" width="0" height="0">
 			<h1>Use the following keys to move</h1>
 			<table border="1">
 			  <tr>
