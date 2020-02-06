@@ -10,17 +10,17 @@
 	<script src="lib/gl-matrix.js"></script>
 	<script src="lib/tutUtil.js"></script>
 	<script src="lib/app.js"></script>
-
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 	</head>
 
 	<body style="background-color: grey;" onLoad="InitDemo();">
-		<canvas id="my-canvas" width='800' height='600' style="background-color: white;">
-			Your browser doesn't support the Canvas Element!
-		</canvas>
 		<center>
+			<canvas id="my-canvas" width='800' height='600' style="background-color: white;">
+				Your browser doesn't support the Canvas Element!
+			</canvas>
 			<img id="crate" src="Assets/crate-front.png" width="0" height="0">
-			<h1>Use the following keys to move</h1>
-			<table border="1">
+			<h1 style="font-family: 'Poppins', sans-serif;">Use the following keys to move</h1>
+			<table border="1" style="font-family: 'Poppins', sans-serif;">
 			  <tr>
 				<td>&nbsp;</td>
 				<td>Forward: <B>Up</B> Arrow</td>
@@ -32,6 +32,7 @@
 				<td>turn right: <B>Right</B> Arrow</td>
 			  </tr>
 			<table/>
+			<button onclick="moveThing(1)">OWO</button>
 		</center>
 	</body>
 
